@@ -1,101 +1,567 @@
+<!--
+
+We are developing WebRays to make the Web a little bit prettier
+
+-->
 <!DOCTYPE html>
-<HTML>
-  <HEAD>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<link rel="stylesheet" title="Monokai Sublime" href="js/highlight/styles/monokai-sublime.css">  
-<TITLE>
-Programming is Fun
-</TITLE>
-  </HEAD>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
-  <BODY onload="nox_blog_init()">
-    <nox-tut-title>
-    Blog testing Title
-    </nox-tut-title>
-    
-<nox-tut-menu>
-<ul>
-<li><a href="default.asp">Home</a></li>
-<li><a href="news.asp">News</a></li>
-<li><a href="contact.asp">Contact</a></li>
-<li><a href="about.asp">About</a></li>
-</ul>
-</nox-tut-menu>
-<div class="Padded">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>
+		Phasmatic
+	</title>
 
-<article>
-<h1>WWF</h1>
-<p>The World Wide Fund for Nature (WWF) is....</p>
- 
+	<link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
 
-  <P>This is very minimal "hello world" HTML document.</P>
-  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-<pre><code class="D">auto l_Engine = new nxEngine;
-int* l_IntPtr = nullptr;</pre></code>
-  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+	<meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86">
+	<meta name="keywords" content="ray tracing, graphics, 3d, ray, tracing, web, rayground, vitsas, phasmatic, webrays, api, path tracing, photorealism, path tracing, webgl, webgl2, rtx" />
+	<meta name="description" content="Phasmatic: Photorealistic 3D Graphics on the Web" />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+	<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+	<div id="wrapper">
+		
+		<div id="wrap">
+			<div id="nav-menu">
+				<div id="nav-menu-logo">
+					<figure>
+						<img src="images/logo.svg" alt="" width="48" />
+						<figcaption>
+							Phasmatic
+						</figcaption>
+					</figure>
+				</div>
+				<div id="jump-menu">
+					<a href="#goal" 		accesskey="1" title="">About</a>
+					<a href="#software" 	accesskey="2" title="">Technology</a>
+					<a href="#solutions" 	accesskey="3" title="">Applications</a>
+					<a href="#research" 	accesskey="4" title="">Research</a>
+					<a href="#team" 		accesskey="5" title="">Team</a>
+					<a href="#partners" 	accesskey="6" title="">Partners</a>
+					<a href="#contact" 		accesskey="7" title="">Contact</a>
+				</div>
+			</div>
+			<!--
+			<div id="header-wrapper">
+				<div id="header" class="container">
+					<div id="logo" class="column left">
+						<h1><a href="#">Phasmatic</a></h1>
+					</div>
+					<div class="column middle">
+						<div id="menu">
+							<ul>
+								<li class="active"><a href="#goal" accesskey="1" title="">About</a></li>
+								<li><a href="#software" accesskey="2" title="">Software</a></li>
+								<li><a href="#solutions" accesskey="3" title="">Solutions</a></li>
+								<li><a href="#research" accesskey="4" title="">Research</a></li>
+								<li><a href="#team" accesskey="4" title="">Team</a></li>
+								<li><a href="#partners" accesskey="5" title="">Partners</a></li>
+								<li><a href="#contact" accesskey="6" title="">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="column right">
+						<img src="images/logo.svg" alt="" width="64" height="64" />
+					</div>
+				</div>
+			</div>
+			-->
+			<div id="banner" style="height: 600px;">
+				<div class="container" style="top:40%;">
+					<div class="title">
+						<h2>Photorealistic 3D Graphics on the Web</h2>
+						<span class="byline">High-performance GPU-accelerated Ray Tracing solutions</span>
+					</div>
+					<ul class="actions">
+						<!--
+						<li><a href="demo.html" class="button">Try our Demo</a></li>
+						-->
+						<li><a href="mailto: nickvitsas@gmail.com" class="button"> Get in touch </a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+  		<div id="goal">
+			<div class="container">
+				<div class="title">
+						<h2>The Evolution of 3D Web Rendering</h2>
+						<span class="byline">
+							Our vision is to change current 3D content Web visualization through Ray Tracing. <br>
+							We enrich visual user experiences with cutting-edge photorealistic rendering.
+						</span>
+					</div>
+					<div class="title">
+
+						<div class="comparison-slider-wrapper">
+							<!-- Comparison Slider - this div contain the slider with the individual images captions -->
+							 <div class="comparison-slider">
+							 <div class="overlay">Ray Tracing</div>
+							 <img src="images/ring_raytraced.jpg" alt="Ray traced ring">
+							 <!-- Div containing the image layed out on top from the left -->
+							 <div class="resize">
+								 <div class="overlay">Direct Rendering</div>
+								<img src="images/ring_raster.jpg" alt="Rasterised ring">
+							 </div>
+							 <!-- Divider where user will interact with the slider -->
+							 <div class="divider"></div>
+							</div>
+							<!-- All global captions if exist can go on the div bellow 
+							 <div class="caption"> Subtle details can make the difference between a virtual object looking “realistic” and “fake”. Ray tracing can provide the most cost-effective photorealistic images possible.</div>
+							 -->
+						 </div>
+
+						<div class="byline">
+							Our team aims to facilitate a shift from “just convincing” 3D content presentation to
+							“properly realistic” 3D Web experiences through ray tracing.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="software">
+			<div class="container">
+				<div class="title">
+					<h2>Technology</h2>
+				</div>
+				<div class="phrase">
+					WebRays is the first generic ray intersection API for the World Wide Web, designed with three goals in mind: <br><b>Quality, Flexibility & Performance</b>
+				</div>
+				<!--<div>
+					<figure class="solution">
+						<img src="images/WebRays.jpg" alt="" width="256" />
+						<figcaption>
+							<h3>WebRays: GPU-accelerated Ray Intersection API</h3>
+						</figcaption>
+					</figure>
+				</div>
+				-->
+				<a href="https://cgaueb.github.io/publications/webrays/">
+				<img src="images/pillars_white.svg" alt=""/>
+				</a>
+				<div class="pillars">
+					<div class="phrase">
+						WebRays can adapt to the algorithm and requirements to achieve the best <b>quality</b> for your scenario.
+					</div>
+					<br />
+					<div class="phrase">
+						WebRays is designed as a generic ray intersection API, offering infinite <b>flexibility</b> to the user.
+					</div>
+					<br />
+					<div class="phrase">
+						WebRays uses WebGL and is designed to extract maximum <b>performance</b> from your application.
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="solutions">
+			<div class="container">
+				<div class="title">
+					<h1>Applications</h1>
+				</div>
+				<div>
+					<h2>3D Product Visualization</h2>
+					<figure class="solution">
+						<picture>
+							<source type="image/webp" srcset="images/jewelry.webp">
+							<img src="images/jewelry.jpg" alt=""/>
+						</picture>	
+						<figcaption>
+							<h3>Jewelry</h3>
+						</figcaption>
+					</figure>
+					<figure class="solution">
+						<picture>
+							<source type="image/webp" srcset="images/sofa.webp">
+							<img src="images/sofa.jpg" alt="" />
+						</picture>	
+						<figcaption>
+							<h3>Furniture</h3>
+						</figcaption>
+					</figure>
+					<figure class="solution">
+						<picture>
+							<source type="image/webp" srcset="images/cad.webp">
+							<img src="images/cad.jpg" alt="" />
+						</picture>
+						<figcaption>
+							<h3>3D Printing</h3>
+						</figcaption>
+					</figure>
+					<figure class="solution">
+						<picture>
+							<source type="image/webp" srcset="images/bmw4.webp">
+							<img src="images/bmw4.jpg" alt="" />
+						</picture>						
+						<figcaption>
+							<h3>Automotive</h3>
+						</figcaption>
+					</figure>	
+					<figure class="solution">
+						<picture>
+							<source type="image/webp" srcset="images/winged.webp">
+							<img src="images/winged.jpg" alt="" />
+						</picture>	
+						<figcaption>
+							<h3>Cultural Heritage</h3>
+						</figcaption>
+					</figure>
+				</div>
+				<br>
+				<br>
+				<div>
+					<h2>Interactive Rendering</h2>
+					<figure class="solution">
+						<picture>
+							<source type="image/webp" srcset="images/architectural_low.webp">
+							<img src="images/architectural.jpg" alt="" />
+						</picture>
+						<figcaption>
+							<h3>Architectural</h3>
+						</figcaption>
+					</figure>
+					<figure class="solution">
+						<picture>
+							<source type="image/webp" srcset="images/living_room_new.webp">
+							<img src="images/living_room_new.jpg" alt="" />
+						</picture>	
+						<figcaption>
+							<h3>Interior Design</h3>
+						</figcaption>
+					</figure>					
+					<figure class="solution">
+						<picture>
+							<source type="image/webp" srcset="images/games.webp">
+							<img src="images/games.jpg" alt="" />
+						</picture>
+						<figcaption>
+							<h3>Games</h3>
+							</figcaption>
+					</figure>
+				</div>
+				<br>
+				<br>
+				<div>
+					<h2>Education</h2>
+					<figure class="solution">
+						<a href="https://www.rayground.com/">
+							<picture>
+								<source type="image/webp" srcset="images/RG_logo.webp">
+								<img src="images/RG_logo.jpg" alt="" style="border-radius: 0; border-top-left-radius: 10%; border-bottom-left-radius: 10%;"/>
+							</picture>						
+						</a>
+						<figcaption>
+							<h3>Rayground: Ray tracing prototyping on the web</h3>
+						</figcaption>
+					</figure>
+				</div>				
+			</div>
+		</div>
+
+		<div id="research">
+			<div class="title">
+				<h2>Research</h2>
+			</div>
+			<div class="container">
+				<div class="title">
+					<h1>Projects</h1>
+				</div>
+				<div style="display: inline-block; margin: auto;">
+					<div class="research-entry-wrapper">
+						<div class="research-entry">
+							<figure style="display: inline-block">
+								<a href="http://www.rayground.com">
+									<picture>
+										<source type="image/webp" srcset="images/rayground_epic.webp">
+										<img src="images/rayground_epic.jpg" alt="" />
+									</picture>
+								</a>
+							</figure>
+							<p class="research-entry-title">
+								<i> Rayground: Ray Tracing Prototyping on the Web </i>
+								<br /> Epic MegaGrants, 2021
+							</p>
+						</div>
+					</div>
+					<div class="research-entry-wrapper">
+						<div class="research-entry">
+							<figure style="display: inline-block">
+								<a href="http://graphics.cs.aueb.gr/graphics/projects.html">
+									<picture>
+										<source type="image/webp" srcset="images/hfri.webp">
+										<img src="images/hfri.jpg" alt="" />
+									</picture>
+								</a>
+							</figure>
+							<p class="research-entry-title">
+								<i>Physically-based Lighting Simulation and Optimization Algorithms</i>
+								<br /> HFRI PhD Fellowship Grant, 2017-2019
+							</p>
+						</div>
+					</div>
+					</br>
+					</br>
+					<div class="title">
+						<h1>Publications</h1>
+					</div>
+					<div class="research-entry-wrapper">
+						<div class="research-entry">
+							<figure style="display: inline-block">
+								<a href="https://ieeexplore.ieee.org/document/9535170">
+									<picture>
+										<source type="image/webp" srcset="images/ieee_rayground.webp">
+										<img src="images/ieee_rayground.jpg" alt="" />
+									</picture>
+								</a>
+							</figure>
+							<p class="research-entry-title">
+								<i>Remote Teaching Advanced Rendering Topics Using the Rayground Platform</i>
+								<br/>IEEE Computer Graphics and Applications (Volume: 41, Issue: 5, Sept.-Oct. 1 2021)
+							</p>
+						</div>
+					</div>
+					<div class="research-entry-wrapper">
+						<div class="research-entry">
+							<figure style="display: inline-block">
+								<a href="https://link.springer.com/chapter/10.1007%2F978-1-4842-7185-8_18">
+									<picture>
+										<source type="image/webp" srcset="images/RTGII_WebRays.webp">
+										<img src="images/RTGII_WebRays.jpg" alt="" />
+									</picture>
+								</a>
+							</figure>
+							<p class="research-entry-title">
+								<i>WebRays: Ray Tracing on the Web</i>
+								<br/>Ray Tracing Gems II: Next Generation Real-Time Rendering with DXR, Vulkan, and OptiX
+							</p>
+						</div>
+					</div>
+					<div class="research-entry-wrapper">
+						<div class="research-entry">
+							<figure style="display: inline-block">
+								<a href="https://diglib.eg.org/handle/10.2312/eged20201027">
+									<picture>
+										<source type="image/webp" srcset="images/rayground_eg2020_low.webp">
+										<img src="images/rayground_eg2020.jpg" alt="" />
+									</picture>
+								</a>
+							</figure>
+							<p class="research-entry-title">
+								<i>Rayground: An Online Educational Tool for Ray Tracing</i>
+								<br /> Eurographics 2020, Education Papers
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="team">
+			<div class="container">
+				<div class="title">
+					<h2>Team</h2>
+				</div>
+				<div class="partner-wrapper">
+
+				<figure class="team-member">
+					<picture>
+						<source type="image/webp" srcset="images/vitsas.png">
+						<img src="images/vitsas.png" alt="" />
+					</picture>
+					<figcaption>
+						<h2>Nick Vitsas</h2>
+						<br />
+						Founder
+						<br />
+						<a href="https://www.linkedin.com/in/nick-vitsas-b00473b7" class="fa fa-linkedin"></a>
+						<a href="https://twitter.com/NVitsas" class="fa fa-twitter"></a>
+					</figcaption>
+				</figure>
+			</div>
+			</div>
+		</div>
+
+		<div id="partners">
+			<div class="container">
+				<div class="title">
+					<h2>Partners</h2>
+				</div>
+				<div class="partner-wrapper">
+					<figure class="partner">
+					<a href="https://www.dept.aueb.gr/en/infotech-overview-en">
+					<picture>
+						<source type="image/webp" srcset="images/aueb.webp">
+						<img src="images/aueb.jpeg" alt="" width="128" />
+					</picture>
+					</a>
+					<figcaption>
+						<h3>Athens University of<br /> Economics and Business</h3>
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+		</div>
+
+		<div id="contact">
+			<div class="container" style="top:40%;">
+				<div class="title">
+					<h2>Contact</h2>
+					<div class="phrase">
+						The versatile design of our software allows it to adapt to your custom requirements and performance characteristics.
+					</div>
+					<ul class="actions">
+						<li><a href="mailto: nickvitsas@gmail.com" class="button"> Get in touch </a></li>
+					</ul>						
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div id="copyright">
+		<ul class="actions">
+			<li>
+				<a href="#wrap" class="button">
+					Back to the Top
+				</a>
+			</li>
+		</ul>
+
+		<p>Chelidoreas 15, Peristeri, Athens, Greece.</p>
+		<div id="social">
+			<a href="https://github.com/ViNeek">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+					<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+				  </svg>
+			</a>
+		</div>
+	</div>
+</body>
+<script>
+	// https://stackoverflow.com/a/8579673
+	/* Slowly transition to the corresponding id div */
+	$("a[href^=\\#]").click(function (e) {
+		e.preventDefault();
+		var dest = $(this).attr('href');
+
+		$('html,body').animate({
+			scrollTop: $(dest).offset().top
+		}, 'slow');
+	});
 
 
-<pre><code class="D">struct nxRendererInternal {
+	$(document).ready(function () {
 
-  int m_Width;
-  int m_Height;
-    
-  nxInputAccessor m_InputAccessor;
-  nxEngineAccessor m_EAccessor;
-  nxSceneGraphAccessor m_SGAccessor;
-  nxRequesterHandle m_RequesterHandle;
-    
-  this(nxEngineAccessor p_EAccessor) {
-    m_InputAccessor =
-      p_EAccessor.GetInputAccessor(p_EAccessor.m_EHandle);
-      m_SGAccessor = p_EAccessor.GetSceneGraphAccessor(
-       p_EAccessor.m_EHandle);
+// If the comparison slider is present on the page lets initialise it, this is good you will include this in the main js to prevent the code from running when not needed
+if ($(".comparison-slider")[0]) {
+  let compSlider = $(".comparison-slider");
 
-    m_EAccessor = p_EAccessor;
-      
-    m_RequesterHandle =
-      m_InputAccessor.Register(m_InputAccessor.m_HInput);
-    
-    m_InputAccessor.RegisterInputCallback(
-        m_InputAccessor.m_HInput, m_RequesterHandle, NOX_INPUT_SIZE, &beam_on_size, this);
-      
-    mixin(NOX_BREAKPOINT); 
-  }
-    
-  bool InitExtentions() {
-    import std.exception;
-    import glad.gl.loader;
+  //let's loop through the sliders and initialise each of them
+  compSlider.each(function () {
+	let compSliderWidth = $(this).width() + "px";
+	$(this).find(".resize img").css({ width: compSliderWidth });
+	drags($(this).find(".divider"), $(this).find(".resize"), $(this));
+  });
 
-    gladLoadGL(); // optionally you can pass a loader to this function
-    writefln("OpenGL Version %d.%d loaded", GLVersion.major, GLVersion.minor);
+  //if the user resizes the windows lets update our variables and resize our images
+  $(window).on("resize", function () {
+	let compSliderWidth = compSlider.width() + "px";
+	compSlider.find(".resize img").css({ width: compSliderWidth });
+  });
+}
+});
 
-    return NOX_TRUE;
-  }
-  
-}</pre></code>
+// This is where all the magic happens
+// This is a modified version of the pen from Ege Görgülü - https://codepen.io/bamf/pen/jEpxOX - and you should check it out too.
+function drags(dragElement, resizeElement, container) {
 
-<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+// This creates a variable that detects if the user is using touch input insted of the mouse.
+let touched = false;
 
-</div>
+window.addEventListener('touchstart', function () {  touched = true; }, {passive: true});
+window.addEventListener('touchend', function () {  touched = false; }, {passive: true});
 
-<footer>
-<p>Posted by: Nick Vitsas</p>
-<p>Contact information: <a href="mailto:someone@example.com">
-someone@example.com</a>.</p>
-</footer>
+// clicp the image and move the slider on interaction with the mouse or the touch input
+dragElement.on("mousedown touchstart", function (e) {
 
-</article>
+  //add classes to the emelents - good for css animations if you need it to
+  dragElement.addClass("draggable");
+  resizeElement.addClass("resizable");
+  //create vars
+  let startX = e.pageX ? e.pageX : e.originalEvent.touches[0].pageX;
+  let dragWidth = dragElement.outerWidth();
+  let posX = dragElement.offset().left + dragWidth - startX;
+  let containerOffset = container.offset().left;
+  let containerWidth = container.outerWidth();
+  let minLeft = containerOffset + 10;
+  let maxLeft = containerOffset + containerWidth - dragWidth - 10;
 
-  </BODY>
-<script src="js/highlight/highlight.pack.js"></script>
-<script src="js/syntax.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-</HTML>
+  //add event listner on the divider emelent
+  dragElement.parents().on("mousemove touchmove", function (e) {
+
+	// if the user is not using touch input let do preventDefault to prevent the user from slecting the images as he moves the silder arround.
+	if (touched === false) {
+	  e.preventDefault();
+	}
+
+	let moveX = e.pageX ? e.pageX : e.originalEvent.touches[0].pageX;
+	let leftValue = moveX + posX - dragWidth;
+
+	// stop the divider from going over the limits of the container
+	if (leftValue < minLeft) {
+	  leftValue = minLeft;
+	} else if (leftValue > maxLeft) {
+	  leftValue = maxLeft;
+	}
+
+	let widthValue = (leftValue + dragWidth / 2 - containerOffset) * 100 / containerWidth + "%";
+
+	$(".draggable").css("left", widthValue).on("mouseup touchend touchcancel", function () {
+	  $(this).removeClass("draggable");
+	  resizeElement.removeClass("resizable");
+	});
+
+	$(".resizable").css("width", widthValue);
+
+  }).on("mouseup touchend touchcancel", function () {
+	dragElement.removeClass("draggable");
+	resizeElement.removeClass("resizable");
+
+  });
+
+}).on("mouseup touchend touchcancel", function (e) {
+  // stop clicping the image and move the slider
+  dragElement.removeClass("draggable");
+  resizeElement.removeClass("resizable");
+
+});
+
+}
+
+</script>
+
+</html>

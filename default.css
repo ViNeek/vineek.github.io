@@ -1,0 +1,1054 @@
+@font-face {
+	font-family: "Phasmatic";
+	src: url("fonts/Aller_Rg.ttf");
+	/*src: url("fonts/Menlo-Regular.ttf");*/
+}
+
+html *
+{
+  	font-size: 1em;
+	/*font-family: Phasmatic;*/
+	font-family: 'Roboto', sans-serif;
+}
+
+	html, body
+	{
+		height: 100%;
+	}
+	
+	body
+	{
+		margin: 0px;
+		padding: 0px;
+		background: #333333;
+		font-family: 'Varela', sans-serif;
+		font-size: 11pt;
+		font-weight: 300;
+		color: #656565;
+	}
+	
+	
+	h1, h2, h3
+	{
+		margin: 0;
+		padding: 0;
+		font-weight: 700;
+		color: #ffffff;
+	}
+	
+	
+	
+	ol, ul
+	{
+		padding: 0;
+		list-style: none;
+	}
+	
+	ul.actions
+	{
+		text-align: center;
+	}
+		
+	ul.actions li
+	{
+		padding: 0;
+		list-style: none;
+	}
+	
+	p
+	{
+		line-height: 180%;
+	}
+	
+	a
+	{
+		color: #0000FF;
+	}
+	
+	a:hover
+	{
+		text-decoration: none;
+	}
+	
+	.container
+	{
+		overflow: hidden;
+		margin: 0em auto;
+		width: 70%;
+	}
+	@media only screen and (max-width: 1200px) {
+		.container
+	{
+		overflow: hidden;
+		margin: 0em auto;
+		width: 100%;
+	}
+	}
+/*********************************************************************************/
+/* List Styles                                                                   */
+/*********************************************************************************/
+
+	ul.staff
+	{
+		margin-bottom: 3em;
+	}
+
+	ul.staff li
+	{
+		display: inline-block;
+	}
+	
+	ul.staff li img
+	{
+		width: 80%;
+		border-radius: 50%;
+	}
+
+
+/*********************************************************************************/
+/* Social Icon Styles                                                            */
+/*********************************************************************************/
+
+	/* Style all font awesome icons */
+	.fa {
+		padding: 15px;
+		font-size: 30px;
+		width: 20px;
+		border-radius: 50%;
+		text-align: center;
+		text-decoration: none;
+		margin: 5px 2px;
+	}
+	
+	/* Add a hover effect if you want */
+	.fa-twitter:hover {
+		opacity: 0.9;
+		background: #55ACEE;
+	}
+
+	.fa-linkedin:hover {
+		opacity: 0.9;
+		background: #007bb5;
+	}
+
+	.fa-user:hover {
+		opacity: 0.9;
+		background: #ff4901;
+	}
+
+	/* Set a specific color for each brand */
+		
+	/* Twitter */
+	.fa-twitter {
+		background: black;
+		color: white;
+	}
+
+	.fa-user {
+		background: black;
+		color: white;
+	}
+
+
+	.fa-linkedin {
+		background: black;
+		color: white;
+	}
+
+	ul.contact
+	{
+		margin: 0;
+		padding: 3em 0em 0em 0em;
+		list-style: none;
+	}
+	
+	ul.contact li
+	{
+		display: inline-block;
+		padding: 0em 0.30em;
+		font-size: 1em;
+	}
+	
+	ul.contact li span
+	{
+		display: none;
+		margin: 0;
+		padding: 0;
+	}
+	
+	ul.contact li a
+	{
+		color: #FFF;
+	}
+	
+	ul.contact li a:before
+	{
+		display: inline-block;
+		background: #3f3f3f;
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		border-radius: 20px;
+		text-align: center;
+		color: #FFFFFF;
+	}
+	
+	ul.contact li a.icon-twitter:before { background: #2DAAE4; }
+	ul.contact li a.icon-facebook:before { background: #39599F; }
+	ul.contact li a.icon-dribbble:before { background: #C4376B;	}
+	ul.contact li a.icon-tumblr:before { background: #31516A; }
+	ul.contact li a.icon-rss:before { background: #F2600B; }
+
+/*********************************************************************************/
+/* Button Style                                                                  */
+/*********************************************************************************/
+
+.button
+{
+	display: inline-block;
+	padding: 0em 3em;
+	background: #af1641;
+	border-radius: 7px;
+	letter-spacing: 0.20em;
+	line-height: 4em;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 1em;
+	color: #FFF;
+}
+	
+.button:before
+{
+	display: inline-block;
+	background: #FFC31F;
+	margin-right: 1em;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 20px;
+	text-align: center;
+	color: #272925;
+}
+	
+/* Heading itles */
+.title
+{
+	margin-bottom: 3em;
+}
+	
+.title h2
+{
+	font-size: 2.7em;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+	
+.title .byline
+{
+	font-size: 1.7em;
+	color: #ffffff;
+}
+
+
+#header .column {
+	float: left;
+}
+
+/* Clear floats after the columns */
+#header .column:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+	  
+#header .left {
+	float: left;
+	width: 25.0%;
+}
+	
+#header .right {
+	float: right;
+	width: auto;
+}
+
+#header .middle {
+	width: 50.0%;
+}
+
+/* Header */
+
+#header-wrapper
+{
+}
+
+#header
+{
+	position: relative;
+	padding: 1em 0em;
+}
+
+/* Logo */
+
+#logo
+{
+	padding-top: 5px;
+}
+	
+#logo h1
+{
+	color: #FFF;
+}
+	
+#logo a
+{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #FFF;
+}
+
+/*********************************************************************************/
+/* Menu                                                                          */
+/*********************************************************************************/
+
+		
+#menu ul
+{
+	display: inline-block;
+}
+	
+#menu li
+{
+	display: block;
+	float: left;
+	text-align: center;
+}
+	
+#menu li a, #menu li span
+{
+	padding: 1em 1em;
+	letter-spacing: 1px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 0.8em;
+	color: #FFF;
+}
+	
+#menu li:hover a, #menu li.active a, #menu li.active span
+{
+	/*background: #dc572e;
+	border-radius: 7px;*/
+	color: #dc572e;
+}
+	
+#menu .current_page_item a
+{
+	background: #af1641;
+	color: #FFF;
+}
+	
+#menu .icon
+{
+}
+
+
+/* Solutions */
+
+#research {
+	overflow: hidden;
+	padding: 5em 0em;
+	color: #ffffff;
+	text-align: center;
+	background-image: url('images/glass_dark.jpg');
+	background-size: cover;
+}
+
+.research {
+	display: inline-block;
+}
+.research img {
+	border-radius: 10%;
+}
+
+.research-entry-wrapper {
+	display: block;
+	margin: auto; 
+}
+
+.research-entry {
+	display:flex;
+	align-items: center;
+	margin: auto;
+	text-align:center;
+}
+
+@media only screen and (max-width: 1200px) {
+	/* For mobile phones: */
+	.research-entry {
+		display:flex;
+		align-items: center;
+		text-align:center;
+	}
+}
+
+.research-entry figure {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	color: #FFF;
+	border-radius: 10%;
+}
+
+.research-entry img {
+	width:128px;
+	border-radius: 10%;
+}
+
+.research-entry-logo {
+	width: 15%;
+	display: inline-block;
+}
+
+.research-entry-title {
+	padding-left: 50px; 
+	text-align:left; 
+	display: inline-block; 
+	letter-spacing: 1px;
+	text-decoration: none;
+	font-size: 1.2em; 
+	padding: 1em 1em;
+}
+
+#research .title h1
+{
+	font-size: 2.2em;
+}
+
+/* Solutions */
+
+#solutions {
+	overflow: hidden;
+	padding: 10em 2em 10em 2em;
+	color: #ffffff;
+	text-align: center;
+	background-image: url('images/glass_dark.jpg');
+	background-size: cover;
+}
+
+#solutions h1
+{
+	font-size: 2.7em;
+}
+
+#solutions h2
+{
+	font-size: 2.2em;
+}
+
+#solutions h3
+{
+	font-size: 1.5em;
+}
+
+.solution {
+	display: inline-block;
+}
+.solution img {
+	width:256px;
+	height:256px;
+	border-radius: 10%; 
+}
+
+/* Products */
+
+#software {
+	min-height:600px;
+	overflow: hidden;
+	padding: 10em 2em 10em 2em;
+	color: #ffffff;
+	text-align: center;
+	background-size: cover;
+	background-image: url('images/glass_of_water_dark.jpg');
+	background-position: center middle;
+	background-attachment: fixed;
+}
+
+#software .pillars {
+	width: 100%;
+	margin: auto;
+}
+
+@media only screen and (max-width: 1200px) {
+	/* For mobile phones: */
+	#software .pillars {
+		width: 100%;
+		margin: auto;
+	}
+}
+
+#contact .phrase {
+	color: gray;
+	font-size: 2.2em;
+}
+
+
+#software .phrase {
+	color: gray;
+	font-size: 2.2em;
+}
+
+#software .phrase b {
+	color: white;
+}
+
+.product {
+	display: inline-block;
+}
+
+#software img {
+	width: 50%;
+	height: 100%;
+	border-radius: 10%;
+}
+
+#software .left {
+	width: 30%;
+	height: 100%;
+	display: inline-block;
+}
+
+#software .right {
+	width: 68.00%;
+	text-align: left;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#software .column img { 
+	width:100%;
+	height:100%;
+}	
+
+/* Contact */
+
+#contact {
+	height:300px;
+	overflow: hidden;
+	padding: 10em 2em 10em 2em;
+	color: #ffffff;
+	text-align: center;
+	background-image: url('images/diamond_dark.jpg');
+	background-position: center bottom;
+	background-attachment: fixed;
+}
+
+#contact .title
+{
+	text-align: center;
+}
+
+#contact .title h2
+{
+	color: #FFF;
+}
+
+#contact p
+{
+	font-size: 2.2em;
+}
+
+#contact .title .byline
+{
+	color: rgba(255,255,255,.6);
+}
+
+#contact ol, #contact ul
+{
+	padding: 0;
+	list-style: disc;
+}
+
+#contact .left {
+	width: 60.00%;
+	display: inline-block;
+	vertical-align: top;
+}
+	
+#contact .right {
+	width: 35.00%;
+	display: inline-block;
+}
+
+#contact .container {
+	overflow: hidden;
+	margin: 0em auto;
+	width: 100%;
+}
+
+#contact .button {
+	margin-top: 3em;
+	background: #255b27 !important;
+	background: #dc572e !important;
+}
+
+
+@media only screen and (max-width: 1200px) {
+	#contact .container {
+		overflow: hidden;
+		margin: 0em auto;
+		width: 100%;
+	}
+}
+
+/* Comnparison */
+
+#comparison-image {
+	min-width: 10%;
+	max-width: 50%;
+	width: 1024px;
+}
+
+/* Nav menu */
+
+#nav-menu {
+	width: 50%;
+	margin: 0 auto;
+	text-align: left;
+}
+
+#nav-menu figure {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	color: #FFF;
+}
+
+#nav-menu-logo {
+	display: inline-block;
+	text-transform: uppercase;
+	width: 10%;
+}
+
+#jump-menu {
+	width: 85%;
+	display: inline-block;
+	text-align: right;
+	margin: auto;
+}
+
+@media only screen and (max-width: 1200px) {
+	/* For mobile phones: */
+	#nav-menu {
+		margin: auto;
+		text-align: center;
+	}
+
+	#jump-menu {
+		width: 100%;
+		display: block;
+		text-align: center;
+	}
+
+	#nav-menu-logo {
+		display: block;
+		width: 100%;
+	}
+}
+
+#jump-menu a
+{
+	padding: 1em 1em;
+	letter-spacing: 1px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 1.0em;
+	color: #FFF;
+}
+
+/* Banner */
+
+#wrap {
+	padding: 2em 2em 2em 2em;
+	background-image: url('images/bg.jpg');
+	background-size: cover;
+}
+	
+#demo-wrapper {
+	background-image: url('images/grad.jpg');
+	background-size: cover;
+	display: flex;	
+    flex-direction: column;
+    justify-content: space-between;
+	height: 100%;
+	background-color: gray;
+}
+
+#banner
+{
+	overflow: hidden;
+	padding: 10em 2em 10em 2em;
+	background-size: cover;
+	text-align: center;
+	color: rgba(255,255,255,.8);
+}
+
+#banner .title
+{
+	margin-bottom: 1em;
+}
+
+#banner .title h2
+{
+	color: #FFF;
+}
+
+#banner .title .byline
+{
+	color: rgba(255,255,255,.6);
+}
+	
+#banner .button
+{
+	margin-top: 3em;
+	background: #255b27 !important;
+	background: #dc572e !important;
+}
+
+/* Copyright */
+
+#copyright
+{
+	background: #333333;
+	overflow: hidden;
+	padding: 2em 2em 2em 2em;
+}
+	
+#copyright p
+{
+	text-align: center;
+	font-size: 1em;
+	color: rgba(255,255,255,0.75);
+}
+	
+#copyright #social
+{
+	text-align: center;
+	fill: white;
+}
+	
+#copyright a
+{
+	text-decoration: none;
+	fill: white;
+	margin-left: 1em;
+}
+
+/* Goal */
+
+#goal
+{
+	overflow: hidden;
+	padding: 10em 2em 10em 2em;
+	background: #af1641;
+	color: rgba(255,255,255,.8);
+	text-align: center;
+	background-image: url('images/living_room_dark.jpg');
+	background-size: cover;
+}
+
+#goal a
+{
+	color: rgba(255,255,255,1);
+}
+	
+#goal h3
+{
+	font-size: 2em;
+}
+
+#goal .button
+{
+	background: #FFF;
+	margin-top: 3em;
+	font-size: 1em;
+	color: #af1641;
+}
+
+#goal img
+{
+	border-radius: 7px;
+}
+
+#goal .title h2
+{
+	color: #FFF;
+}
+
+#goal .title .byline
+{
+	color: rgba(255,255,255,.6);
+}
+	
+/* Partners */
+
+#partners
+{
+	overflow: hidden;
+	padding: 10em 2em 10em 2em;
+	background: #ffffff;
+	color: rgba(0,0,0,.8);
+	text-align: center;
+	background-image: url('images/living_room_dark.jpg');
+	background-position: center bottom;	
+	background-size: cover;
+}
+
+#partners h3
+{
+	font-size: 1.5em;
+}
+
+#partners a
+{
+	color: rgba(0,0,0,.8);
+}
+	
+#partners .button
+{
+	background: #FFF;
+	margin-top: 3em;
+	font-size: 1em;
+	color: #af1641;
+}
+
+#partners .title h2
+{
+	color: rgb(255,255,255);
+}
+
+#partners .title .byline
+{
+	color: rgba(255, 255, 255, 0.8);
+}
+
+.partner {
+	display: inline-block;
+	color: rgba(255, 255, 255, 0.8);
+}
+
+.partner img
+{
+	border-radius: 15px;
+}
+
+.partner-wrapper {
+	flex-wrap: wrap; 
+	margin: auto; 
+	display:flex; 
+	align-items: top; 
+	vertical-align: top; 
+	text-align:center;
+	justify-content: center;
+}
+
+/* Future */
+
+#future
+{
+	overflow: hidden;
+	padding: 10em 2em 10em 2em;
+	color: #ffffff;
+	text-align: center;
+}
+
+#future .button
+{
+	display: inline-block;
+	padding: 0em 3em;
+	background: #000000;
+	border-radius: 7px;
+	letter-spacing: 0.20em;
+	line-height: 4em;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 1em;
+	color: #FFF;
+}
+
+/*********************************************************************************/
+/* Team                                                                      */
+/*********************************************************************************/
+#team
+{
+	overflow: hidden;
+	padding: 10em 2em 10em 2em;
+	color: #ffffff;
+	text-align: center;
+	background: #5e172b;
+	background-image: url('images/glass_dark.jpg');
+	background-size: cover;
+}
+
+#team a
+{
+	color: #ffffff;
+}
+
+#team .button
+{
+	background: #FFF;
+	margin-top: 3em;
+	font-size: 1em;
+	color: #af1641;
+}
+
+#team .title h2
+{
+	color: #ffffff;
+}
+
+#team .title .byline
+{
+	color: #ffffff;
+}
+
+.team-member-wrapper {
+	flex-wrap: wrap; 
+	margin: auto; 
+	display:flex; 
+	text-align:center;
+	justify-content: center;
+	align-items: center ;
+}
+
+.team-member {
+	display: inline-block;
+	width: 350px;
+}
+.team-member h2 {
+	font-size: 2.2em;
+}
+.team-member img {
+	width:128px;
+	height:128px;
+	border-radius: 50%;
+}
+
+/*********************************************************************************/
+/* Comparison Slider                                                             */
+/*********************************************************************************/
+
+.comparison-slider-wrapper {
+	position: relative;
+	width: 70%;
+	margin: 20px 0;
+	background-color: white;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+  }
+  .comparison-slider-wrapper .comparison-slider {
+	position: relative;
+	width: 100%;
+	margin: 0;
+	border: 5px rgb(255, 255, 255) solid;
+	box-sizing: border-box;
+  }
+  .comparison-slider-wrapper .comparison-slider > img {
+	width: 100%;
+	height: auto;
+	display: block;
+  }
+  .comparison-slider-wrapper .comparison-slider .overlay {
+	display: none;
+	position: absolute;
+	width: 150px;
+	bottom: 20px;
+	right: 20px;
+	background-color: rgba(0, 0, 0, 0.4);
+	padding: 10px;
+	box-sizing: border-box;
+	color: #ddd;
+	text-align: right;
+	font-size: 17px;
+  }
+  @media screen and (min-width: 767px) {
+	.comparison-slider-wrapper .comparison-slider .overlay {
+	  display: block;
+	}
+  }
+  .comparison-slider-wrapper .comparison-slider .resize {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 50%;
+	overflow: hidden;
+  }
+  .comparison-slider-wrapper .comparison-slider .resize > img {
+	display: block;
+  }
+  .comparison-slider-wrapper .comparison-slider .resize .overlay {
+	right: auto;
+	left: 20px;
+	text-align: left;
+  }
+  .comparison-slider-wrapper .comparison-slider .divider {
+	position: absolute;
+	width: 3px;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.7);
+	left: 50%;
+	top: 0;
+	bottom: 0;
+	margin-left: -1px;
+	cursor: ew-resize;
+  }
+  .comparison-slider-wrapper .comparison-slider .divider:before {
+	content: "";
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	left: -9px;
+	top: 50%;
+	margin-top: -10px;
+	background-color: white;
+	transform: rotate(45deg);
+	transition: all 0.1s ease-in-out;
+  }
+  .comparison-slider-wrapper .comparison-slider .divider:after {
+	content: "";
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	left: -5px;
+	top: 50%;
+	margin-top: -6px;
+	background-color: white;
+	transform: rotate(45deg);
+	transition: all 0.1s ease-in-out;
+  }
+  .comparison-slider-wrapper .comparison-slider .divider.draggable:before {
+	width: 30px;
+	height: 30px;
+	left: -14px;
+	margin-top: -15px;
+  }
+  .comparison-slider-wrapper .comparison-slider .divider.draggable:after {
+	width: 20px;
+	height: 20px;
+	left: -9px;
+	margin-top: -10px;
+	background-color: rgb(112, 13, 13);
+  }
+  .comparison-slider-wrapper .caption {
+	position: relative;
+	color: rgba(0, 0, 0, 1);
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	font-size: 16px;
+	font-style: italic;
+  }
+  
